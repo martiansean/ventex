@@ -68,14 +68,7 @@ router.post('/register', (req, res) => {
             name: req.body.name,
             email: req.body.email,
             password: req.body.password
-          }).catch(user => {
-            res.redirect('/users/register', {
-              name: req.body.name,
-              password: req.body.password,
-              password2: req.body.password2
-            });
           })
-
           bcrypt.genSalt(10, (err, salt) => {
             bcrypt.hash(newUser.password, salt, (err, hash) => {
               if (err) throw err;
@@ -92,7 +85,14 @@ router.post('/register', (req, res) => {
             });
           });
         }
-      });
+      }).catch(user => {
+        req.flash('error_msg', 'Username is taken');
+        res.redirect('/users/register', {
+          name: req.body.name,
+          password: req.body.password,
+          password2: req.body.password2
+        });
+      })
   }
 });
 
