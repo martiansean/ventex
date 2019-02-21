@@ -1,0 +1,53 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.center-align {
+  margin-top: 15%;
+}
+.item {
+  list-style: none;
+  margin-right: 20px;
+}
+.left-side, .right-side {
+  list-style: none;
+}
+.right-side {
+  padding-left: 20px;
+}
+.red {
+  background-color: #e53935;
+  color: #ffffff;
+}
+.green {
+  background-color: #7cb342;
+  color: #ffffff;
+}
+h5 {
+  color: #1e88e5;
+  text-align: center;
+}
+.wrapper-404 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+.wrapper-404 h2 {
+  color: #1e88e5;
+}
+.each {
+  padding: 30px;
+}
+.mid {
+  font-size: 25px;
+}
+.form {
+  /* display: inline-block; */
+  text-align: right;
+  float: right;
+  margin-bottom: 10px;
+}
+.form button {
+  position: relative;
+  z-index: 10;
+}
+

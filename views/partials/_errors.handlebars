@@ -1,0 +1,19 @@
+{{#if error}}
+{{!-- <div class="chip center-align red">{{error}}</div> --}}
+
+<div class="chip red">
+  {{error}}
+  <i class="close material-icons">close</i>
+</div>
+{{/if}}
+
+{{#each errors}}
+
+<div class="chip red">
+  {{text}}
+  <i class="close material-icons">close</i>
+</div>
+
+{{else}}
+
+{{/each}}

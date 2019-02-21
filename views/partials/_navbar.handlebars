@@ -1,0 +1,15 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper blue darken-1">
+      {{#if user}}
+      <a href="/msg" class="brand-logo center">VENTEX</a>
+      <li class="left-side"><a href="/users/logout" class="right item">Log out</a></li>
+      <li class="right-side"><a href="/about" class="left item">About</a></li>
+      {{!-- <a href="/users/logout" class="">Log out</a> --}}
+      {{else}}
+      <a href="/" class="brand-logo center">VENTEX</a>
+      <li class="right-side"><a href="/about" class="left item">About</a></li>
+      {{/if}}
+    </div>
+  </nav>
+</div>

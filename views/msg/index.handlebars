@@ -1,0 +1,27 @@
+<div style="text-align:center; font-size:3.5vmin; ">
+  <a href="http://localhost:5000/msg/{{id}}">http://localhost:5000/msg/{{id}}</a>
+</div>
+<br/>
+
+{{#each ideas}}
+<div class="card">
+  <ul class="collection with-header">
+    <li class="collection-item">
+      <div>
+        <div style="display:inline-block;">{{details}}</div>
+      </div>
+      <form class="form" method="post" action="/msg/{{id}}?_method=DELETE">
+          <input type="hidden" name="_method" value="DELETE">
+          <button class="btn waves-effect waves-light blue darken-1" type="submit" name="action">
+            <i class="small material-icons middle">clear</i>
+          </button>
+      </form>
+    </li>
+  </ul>
+
+</div>
+
+</br>
+{{else}}
+<h4 style="text-align:center">No messages 😮</h4>
+{{/each}}

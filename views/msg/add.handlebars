@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col s12 m12">
+    </br>
+    <div class="card">
+      <h5 style="padding-top:10px">Send message to {{name}}</h5>
+      <div class="card-content">
+        <div class="row">
+          <form method="post" action="/msg/{{id}}" class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea class="materialize-textarea" name="details" ></textarea>
+                <label for="details">Message</label>
+              </div>
+            </div>
+            <button class="btn waves-effect col s12 m12 waves-light blue darken-1" type="submit" name="action">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
