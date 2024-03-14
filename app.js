@@ -20,7 +20,7 @@ require('./config/passport')(passport);
 // Map global promise - get rid of warning
 mongoose.Promise = global.Promise;
 // Connect to mongoose
-mongoose.connect('mongodb://sean:sean@cluster0-shard-00-00-qa7i0.azure.mongodb.net:27017,cluster0-shard-00-01-qa7i0.azure.mongodb.net:27017,cluster0-shard-00-02-qa7i0.azure.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', {
+mongoose.connect('STRING', {
   useMongoClient: true
 })
   .then(() => console.log('MongoDB Connected...'))
